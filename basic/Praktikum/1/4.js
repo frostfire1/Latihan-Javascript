@@ -12,7 +12,7 @@ function sumGeometri(a, r, n) {
         return a * n;
       }
     for (let i = 1; i <= n; i++) {
-      sum += a * (Math.pow(r, i) - 1) / (r - 1);
+      sum += a * Math.pow(r, (i-1));
     }
     return sum;
   }
