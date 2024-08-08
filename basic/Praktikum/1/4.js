@@ -5,7 +5,7 @@ Gunakan pendekatan konsep perulangan!
 */
 
 
-// Rumus: Sn = a * (r^n - 1) / (r - 1)
+// Rumus: Sn = a * (r^(n-1))
 function sumGeometri(a, r, n) {
     let sum = 0;
     if (r === 1) {
