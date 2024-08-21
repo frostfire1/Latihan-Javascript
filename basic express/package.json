@@ -1,0 +1,14 @@
+{
+  "name": "basic-express",
+  "version": "0.1.0",
+  "description": "tugas basic express",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "frostfire1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
