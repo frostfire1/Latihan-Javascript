@@ -1,4 +1,4 @@
-const e = require('express');
+
 const Kubus = require('../../utils/Bangun Ruang/kubus');
 
 exports.Kubus = (req, res) => {

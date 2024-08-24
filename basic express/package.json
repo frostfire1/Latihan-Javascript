@@ -9,6 +9,7 @@
   "author": "frostfire1",
   "license": "MIT",
   "dependencies": {
+    "basic-express": "file:",
     "express": "^4.19.2"
   }
 }
