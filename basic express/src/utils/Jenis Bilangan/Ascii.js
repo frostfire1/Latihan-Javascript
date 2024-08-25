@@ -4,19 +4,19 @@ class Ascii {
         this.base = base;
     }
 
-    toDecimal() {
+    static toDecimal() {
         return parseInt(this.value, this.base);
     }
 
-    toBinary() {
+    static toBinary() {
         return this.toDecimal().toString(2);
     }
 
-    toOctal() {
+    static toOctal() {
         return this.toDecimal().toString(8);
     }
 
-    toHexadecimal() {
+    static toHexadecimal() {
         return this.toDecimal().toString(16);
     }
 

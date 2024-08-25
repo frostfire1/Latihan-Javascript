@@ -4,15 +4,15 @@ class Decimal {
         this.base = base;
     }
 
-    toBinary() {
+    static toBinary() {
         return this.value.toString(2);
     }
 
-    toOctal() {
+    static toOctal() {
         return this.value.toString(8);
     }
 
-    toHexadecimal() {
+    static toHexadecimal() {
         return this.value.toString(16);
     }
 

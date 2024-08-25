@@ -4,19 +4,19 @@ class Binary {
         this.base = base;
     }
 
-    toDecimal() {
+    static toDecimal() {
         return parseInt(this.value, this.base);
     }
 
-    toAscii() {
+    static toAscii() {
         return String.fromCharCode(this.toDecimal());
     }
 
-    toOctal() {
+    static toOctal() {
         return this.toDecimal().toString(8);
     }
 
-    toHexadecimal() {
+    static toHexadecimal() {
         return this.toDecimal().toString(16);
     }
 

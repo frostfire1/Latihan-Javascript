@@ -9,7 +9,7 @@ exports.Celcius = (req, res) => {
 exports.Fahrenheit = (req, res) => {
     const c = parseFloat(req.params.c);
     const celcius = new Celcius(c);
-    res.json(celcius.Fahrenheit());
+    res.json(celcius.toFahrenheit());
 }
 
 exports.Reamur = (req, res) => {

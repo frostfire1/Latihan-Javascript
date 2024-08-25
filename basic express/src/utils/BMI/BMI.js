@@ -1,6 +1,6 @@
 class BMI {
     calculateBMI(weight, height) {
-        return weight / (height * height);
+        return (weight / (height * height)).toFixed(2);
     }
 
     getBMICategory(bmi) {
@@ -21,17 +21,18 @@ class BMI {
         return {
             tinggi: height,
             berat: weight,
-            bmi : bmi,
-            Kategori : category
+            bmi: bmi,
+            Kategori: category
         };
     }
 
-    static getBMIResultWithIdealWeight(weight, height) {
-        const bmiResult = this.getBMIResult(weight, height);
-        const idealWeight = 24.9 * height * height;
+    getBMIResultWithIdealWeight(weight, height) {
+        const bmiCalculator = new BMI();
+        const bmiResult = bmiCalculator.getBMIResult(weight, height);
+        const idealWeight = (24.9 * height * height).toFixed(2);
         return {
             ...bmiResult,
-            idealWeight
+            idealWeight: idealWeight
         };
     }
 }
