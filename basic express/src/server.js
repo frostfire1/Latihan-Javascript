@@ -10,7 +10,7 @@ app.use('/bangunRuang', RouterBangunRuang);
 app.use('/convert', RouterConver);
 app.use('/jenisBilangan', RouterJenisBilangan);
 app.use('/bmi', RouterBMI);
-
+app.use(express.json());
 function startServer() {
     app.listen(port, () => {
         console.log(`Server berjalan di http://localhost:${port}`);

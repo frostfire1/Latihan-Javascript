@@ -5,6 +5,7 @@ const Binary = require('../controllers/Jenis Bilangan/Biner');
 const Decimal = require('../controllers/Jenis Bilangan/Decimal');
 const Hexadecimal = require('../controllers/Jenis Bilangan/Hexadecimal');
 
+RouterJenisBilangan.use(express.json());
 RouterJenisBilangan.post('/ascii', Ascii.Ascii);
 RouterJenisBilangan.post('/ascii/octal', Ascii.Octal);
 RouterJenisBilangan.post('/ascii/binary', Ascii.Binary);

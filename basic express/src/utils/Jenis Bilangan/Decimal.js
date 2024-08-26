@@ -1,18 +1,17 @@
 class Decimal {
-    constructor(value, base) {
+    constructor(value) {
         this.value = value;
-        this.base = base;
     }
 
-    static toBinary() {
+    toBinary() {
         return this.value.toString(2);
     }
 
-    static toOctal() {
+    toOctal() {
         return this.value.toString(8);
     }
 
-    static toHexadecimal() {
+    toHexadecimal() {
         return this.value.toString(16);
     }
 

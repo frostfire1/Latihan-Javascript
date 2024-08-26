@@ -1,23 +1,23 @@
 class Binary {
-    constructor(value, base) {
-        this.value = value;
-        this.base = base;
+    constructor(value) {
+        this.values = value.split(' ');
+        this.base = 2;
     }
 
-    static toDecimal() {
-        return parseInt(this.value, this.base);
+    toDecimal() {
+        return this.values.map(val => parseInt(val, this.base));
     }
 
-    static toAscii() {
-        return String.fromCharCode(this.toDecimal());
+    toAscii() {
+        return this.toDecimal().map(dec => String.fromCharCode(dec)).join('');
     }
 
-    static toOctal() {
-        return this.toDecimal().toString(8);
+    toOctal() {
+        return this.toDecimal().map(dec => dec.toString(8));
     }
 
-    static toHexadecimal() {
-        return this.toDecimal().toString(16);
+    toHexadecimal() {
+        return this.toDecimal().map(dec => dec.toString(16));
     }
 
     toAll() {

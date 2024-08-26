@@ -1,18 +1,18 @@
 class Octal {
-    constructor(value, base) {
+    constructor(value) {
         this.value = value;
-        this.base = base;
+        this.base = 8;
     }
 
-    static toDecimal() {
+    toDecimal() {
         return parseInt(this.value, this.base);
     }
 
-    static toBinary() {
+    toBinary() {
         return this.toDecimal().toString(2);
     }
 
-    static toHexadecimal() {
+    toHexadecimal() {
         return this.toDecimal().toString(16);
     }
 

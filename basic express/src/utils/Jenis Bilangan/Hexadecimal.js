@@ -1,18 +1,17 @@
 class Hexadecimal {
-    constructor(value, base) {
+    constructor(value) {
         this.value = value;
-        this.base = base;
     }
 
-    static toDecimal() {
-        return parseInt(this.value, this.base);
+    toDecimal() {
+        return parseInt(this.value, 16);
     }
 
-    static toAscii() {
+    toAscii() {
         return String.fromCharCode(this.toDecimal());
     }
 
-    static toBinary() {
+    toBinary() {
         return this.toDecimal().toString(2);
     }
 

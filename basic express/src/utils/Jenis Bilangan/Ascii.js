@@ -1,22 +1,22 @@
 class Ascii {
     constructor(value, base) {
         this.value = value;
-        this.base = base;
+        this.base = base || 10;
     }
 
-    static toDecimal() {
+    toDecimal() {
         return parseInt(this.value, this.base);
     }
 
-    static toBinary() {
+    toBinary() {
         return this.toDecimal().toString(2);
     }
 
-    static toOctal() {
+    toOctal() {
         return this.toDecimal().toString(8);
     }
 
-    static toHexadecimal() {
+    toHexadecimal() {
         return this.toDecimal().toString(16);
     }
 
